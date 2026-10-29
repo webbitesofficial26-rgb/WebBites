@@ -1,0 +1,22 @@
+# Environment variables and secrets
+
+.env
+.env.*
+!.env.example
+
+# Dependencies
+
+node_modules/
+
+# React build files
+
+Frontend/webbites/build/
+
+# Logs
+
+*.log
+
+# Operating system files
+
+.DS_Store
+Thumbs.db
