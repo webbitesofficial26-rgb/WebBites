@@ -1,5 +1,5 @@
 
-import { useEffect, useState } from "react";
+import {  useCallback, useEffect, useState } from "react";
 import apiClient from "../../config/apiClient";
 import { useNavigate } from "react-router-dom";
 
@@ -25,7 +25,7 @@ const ManageCoupons = () => {
         usageLimit: "",
     });
 
-    const fetchCoupons = async () => {
+   const fetchCoupons = useCallback(async () => {
         try {
             const token = localStorage.getItem("token");
 
@@ -55,11 +55,11 @@ const ManageCoupons = () => {
         } finally {
             setLoading(false);
         }
-    };
+    }, [navigate]);
 
     useEffect(() => {
         fetchCoupons();
-    }, []);
+    }, [fetchCoupons]);
 
     const handleChange = (e) => {
         const { name, value } = e.target;

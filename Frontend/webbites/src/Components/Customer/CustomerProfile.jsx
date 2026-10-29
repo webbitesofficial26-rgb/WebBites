@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import apiClient from "../../config/apiClient";
 
-const emptyAddress = () => ({ label: "Home", address: "", isDefault: false });
+
 
 const CustomerProfile = () => {
   const navigate = useNavigate();
