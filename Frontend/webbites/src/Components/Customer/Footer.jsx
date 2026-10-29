@@ -23,7 +23,7 @@ const Footer = () => {
             <div className="mt-6 flex gap-3">
               <Link
                 to="#"
-                onClick={preventLink}
+               
                 aria-label="Facebook"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 text-sm font-bold text-gray-300 transition-all duration-300 hover:-translate-y-1 hover:bg-red-500 hover:text-white"
               >
@@ -32,7 +32,7 @@ const Footer = () => {
 
               <Link
                 to="#"
-                onClick={preventLink}
+                
                 aria-label="X"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 text-sm font-bold text-gray-300 transition-all duration-300 hover:-translate-y-1 hover:bg-red-500 hover:text-white"
               >
@@ -41,7 +41,7 @@ const Footer = () => {
 
               <Link
                 to="#"
-                onClick={preventLink}
+                
                 aria-label="Instagram"
                 className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-800 text-sm font-bold text-gray-300 transition-all duration-300 hover:-translate-y-1 hover:bg-red-500 hover:text-white"
               >
